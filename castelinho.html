@@ -1,38 +1,69 @@
+    
+<script>
+      
+    alert("sua missão é fugir do Castelo.")     
 
     
+//Escada(esquerda) Porta(Direita)
+
+
+    let reposta;
     
-    <script> 
-      
-        Alert("sua missão é fugir do Castelo.")     
-        
-        combatNormal = "Você entrou em um combate"
-        let porta;
-        let escada;
-        let resposta;
-        //...Escada(esquerda) Porta(Direita)
-        
-        resposta = prompt("escolha entre (porta) ou (escada)")
-        
-        If(resposta == "porta");{
-        Alert("você precisa da chave para abrir a porta.");
-        Alert("você opta por descer a escada");
-        Alert("logo ao descer a escada você se depara com um guarda");
-        
-        let guarda;
-        
-        guarda = prompt("você quer lutar(L) ou sair de fininho(SF)");
-            If(guarda == "L");{
-             
-            let golpe;
-            let dano;
-                Alert(combatNormal)
-                golpe = prompt("escolha entre chute(C) ou soco(S)");
-                If(golpe == "C");{
-        
-                }
-                   
-           }
+    resposta = prompt("escolha entre (porta) ou (escada)")
+    
+    
+    if(resposta == "porta"){
+        alert("você precisa da chave para abrir a porta.");
+        alert("você opta por descer a escada");
+        alert("logo ao descer a escada você se depara com um guarda");
+    
+        let dano = 3;
+        let VDguarda = 10;
+        let combatNormal = "você entrou em um combate."
+    
+    let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
+        if(guarda == "L"){
+            alert(combatNormal);
+            
+            golpe = prompt("escolha entre chute(C) ou soco(S)");
+            
+            if(golpe == "C"){
+                VDguarda -= dano
+                    if(VDguarda == 7){
+                        alert("chute causou 3 de dano.")
+                    }
+                alert("o guarda se prepara para atacar!");
+                alert("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
+                    let golpe2;
+                    if(golpe2 == "Ds"){
+                        alert("você falha em desviar e recebe o dano por inteiro");
+                        let pv = 10;
+                        pv -= random.math
+                        
+                    }
+                                              
+                        
+
+
+
+
+
+            }
         }
-        
-        <script/>
+    }
     
+    
+    
+    if(resposta == "escada"){
+        alert("você opta por descer a escada");
+        alert("logo ao descer a escada você se depara com um guarda");
+    
+    
+    guarda = prompt("você quer lutar(L) ou sair de fininho(SF)");
+    
+}
+    
+
+
+
+</script>

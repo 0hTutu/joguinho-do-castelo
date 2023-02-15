@@ -1,11 +1,6 @@
-    
 <script>
       
     alert("sua missão é fugir do Castelo.")     
-
-    
-//Escada(esquerda) Porta(Direita)
-
 
     let reposta;
     
@@ -16,54 +11,134 @@
         alert("você precisa da chave para abrir a porta.");
         alert("você opta por descer a escada");
         alert("logo ao descer a escada você se depara com um guarda");
-    
-        let dano = 3;
+        
+        let pv = 10;
+        let dano;
         let VDguarda = 10;
         let combatNormal = "você entrou em um combate."
     
     let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
+        
+        if(guarda == "SF"){
+            alert("você passa pelo guarda bem no sapatinho!");
+            alert("a frente você encontra uma porta!"); 
+            alert("é..."); 
+            alert("ela também precisa de chave.");
+            alert("tava pensando que ia ser facil assim? VAGABUNDO!")
+            alert("você volte e decide lutar com o guarda.")
+        }
+    
+                                        //... daqui pra baixo é luta e pah, btf?
+    
         if(guarda == "L"){
             alert(combatNormal);
             
-            golpe = prompt("escolha entre chute(C) ou soco(S)");
+            let golpe = prompt("escolha entre chute(C) ou soco(S)");
             
-            if(golpe == "C"){
-                VDguarda -= dano
-                    if(VDguarda == 7){
-                        alert("chute causou 3 de dano.")
-                    }
-                alert("o guarda se prepara para atacar!");
-                alert("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
-                    let golpe2;
+        while(golpe == "C"){
+            let dano = 3;
+                if(golpe == "C"){
+                     VDguarda -= dano;
+                if(VDguarda == 7){
+                    alert("chute causou 3 de dano.");
+                    alert("o guarda se prepara para atacar!");
+                        golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
+                 
+                }
+                }
+        
+        }
+
+        while(golpe == "S"){
+            let dano = 4;
+                if(golpe == "S"){
+                     VDguarda -= dano;
+                if(VDguarda == 6){
+                    alert("chute causou 4 de dano.");
+                    alert("o guarda se prepara para atacar!");
+                        golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
                     if(golpe2 == "Ds"){
                         alert("você falha em desviar e recebe o dano por inteiro");
-                        let pv = 10;
-                        pv -= random.math
-                        
+                            pv -= 4;
+                        alert("você recebeu 4 de dano!");
+                        golpe = prompt("escolha entre chute(C) ou soco(S)");
                     }
-                                              
-                        
-
-
-
-
-
-            }
+                }
+                }
+        
         }
-    }
-    
-    
-    
-    if(resposta == "escada"){
-        alert("você opta por descer a escada");
+
+}
+}
+                                        //... É AQUI BOBÃO, NÃO SE PERDE DNV NÃO
+        
+        if(resposta == "escada"){
+            alert("você opta por descer a escada");
         alert("logo ao descer a escada você se depara com um guarda");
+        let pv = 10;
+        let dano;
+        let VDguarda = 10;
+        let combatNormal = "você entrou em um combate."
     
+    let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
     
-    guarda = prompt("você quer lutar(L) ou sair de fininho(SF)");
+        if(guarda == "SF"){
+            alert("você passa pelo guarda bem no sapatinho!");
+            alert("a frente você encontra uma porta!"); 
+            alert("é..."); 
+            alert("ela também precisa de chave.");
+            alert("tava pensando que ia ser facil assim? VAGABUNDO!")
+            alert("você volte e decide lutar com o guarda.")
+        }
     
+        if(guarda == "L"){
+            alert(combatNormal);
+            
+            let golpe = prompt("escolha entre chute(C) ou soco(S)");
+            
+        while(golpe == "C"){
+            let dano = 3;
+                if(golpe == "C"){
+                     VDguarda -= dano;
+                if(VDguarda == 7){
+                    alert("chute causou 3 de dano.");
+                    alert("o guarda se prepara para atacar!");
+                        golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
+                    if(golpe2 == "Ds"){
+                        alert("você falha em desviar e recebe o dano por inteiro");
+                            pv -= 4;
+                        alert("você recebeu 4 de dano!");
+                        golpe = prompt("escolha entre chute(C) ou soco(S)");
+                    }
+                }
+                }
+        }
+
+        while(golpe == "S"){
+            let dano = 4;
+                if(golpe == "S"){
+                     VDguarda -= dano;
+                if(VDguarda == 6){
+                    alert("chute causou 4 de dano.");
+                    alert("o guarda se prepara para atacar!");
+                        golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
+                    if(golpe2 == "Ds"){
+                        alert("você falha em desviar e recebe o dano por inteiro");
+                            pv -= 4;
+                        alert("você recebeu 4 de dano!");
+                        golpe = prompt("escolha entre chute(C) ou soco(S)");
+                }
+                }
+                }
+        
+        }
+
+}
 }
     
+    
 
-
+    
 
 </script>
+

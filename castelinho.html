@@ -1,3 +1,9 @@
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+
 <script>
       
     alert("sua missão é fugir do Castelo.")     
@@ -26,6 +32,7 @@
             alert("ela também precisa de chave.");
             alert("tava pensando que ia ser facil assim? VAGABUNDO!")
             alert("você volte e decide lutar com o guarda.")
+        
         }
     
                                         //... daqui pra baixo é luta e pah, btf?
@@ -40,10 +47,21 @@
                 if(golpe == "C"){
                      VDguarda -= dano;
                 if(VDguarda == 7){
-                    alert("chute causou 3 de dano.");
+                    alert(`chute causou ${dano} de dano.`);
                     alert("o guarda se prepara para atacar!");
                         golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
                  
+                        while(golpe2 == "Ds"){
+                            
+                        }
+                        
+                        while(golpe2 == "Df"){
+
+                        }
+                        
+                        while(golpe2 == "Ca"){
+
+                        }
                 }
                 }
         
@@ -60,7 +78,7 @@
                     if(golpe2 == "Ds"){
                         alert("você falha em desviar e recebe o dano por inteiro");
                             pv -= 4;
-                        alert("você recebeu 4 de dano!");
+                        alert(`você recebeu ${dano} de dano!`);
                         golpe = prompt("escolha entre chute(C) ou soco(S)");
                     }
                 }
@@ -101,13 +119,13 @@
                 if(golpe == "C"){
                      VDguarda -= dano;
                 if(VDguarda == 7){
-                    alert("chute causou 3 de dano.");
+                    alert(`chute causou ${dano} de dano.`);
                     alert("o guarda se prepara para atacar!");
                         golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
                     if(golpe2 == "Ds"){
                         alert("você falha em desviar e recebe o dano por inteiro");
                             pv -= 4;
-                        alert("você recebeu 4 de dano!");
+                            alert(`você recebeu ${dano} de dano!`);
                         golpe = prompt("escolha entre chute(C) ou soco(S)");
                     }
                 }
@@ -141,4 +159,3 @@
     
 
 </script>
-

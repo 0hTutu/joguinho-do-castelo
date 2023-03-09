@@ -1,2 +1,3 @@
 # joguinho-do-castelo
-estou começando a "brincar" um pouco com JavaScript
+Neste projeto pretendo fazer um jogo muito simples usando JavaScript.
+Ainda estou aprendendo e pretendo só melhorar o código!

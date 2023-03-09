@@ -1,12 +1,21 @@
-<style>
-    body{
-        background-color: black;
-    }
-</style>
-
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuja do Castelo!</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
 <script>
-      pv = 10
-   if(pv > 0){
+
+pv = 10
+if(pv > 0){
    
    alert("sua missão é fugir do Castelo.")     
 
@@ -19,9 +28,9 @@
         alert("você opta por descer a escada");
         alert("logo ao descer a escada você se depara com um guarda");
         
-        let dano;
-        let VDguarda = 10;
-        let combatNormal = "você entrou em um combate."
+            let dano;
+            let VDguarda = 10;
+            let combatNormal = "você entrou em um combate."
     
     let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
         
@@ -48,25 +57,25 @@
                 if(VDguarda == 7){
                     alert(`chute causou ${dano} de dano.`);
                     alert("o guarda se prepara para atacar!");
-                        golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
-                 
-                        if(golpe2 == "Ds"){
-                            alert("Você desviou do ataque!");
-                        }
+                    golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
                         
-                        else if(golpe2 == "Df"){
-                            alert("Você defende, mas não bloqueia totalmente o dano.");
-                        }
+                    if(golpe2 == "Ds"){
+                        alert("Você desviou do ataque!");
+                    }
                         
-                        else if(golpe2 == "Ca"){
-                            alert("Você falha ao contra atacar e recebe o dano por inteiro.");
-                            var dano2 = 10;
-                            alert(`-${dano2} de vida`);
-                            pv -= dano2
+                    else if(golpe2 == "Df"){
+                        alert("Você defende, mas não bloqueia totalmente o dano.");
+                    }
                         
-                        }
+                    else if(golpe2 == "Ca"){
+                        alert("Você falha ao contra atacar e recebe o dano por inteiro.");
+                        var dano2 = 10;
+                        alert(`-${dano2} de vida`);
+                        pv -= dano2
+                        
+                    }
                 }
-                }
+            }
         
         }
 
@@ -85,24 +94,23 @@
                         golpe = prompt("escolha entre chute(C) ou soco(S)");
                     }
                 }
-                }
+            }
         
         }
 
-}
+    }
 }
                            
-
-                                        //aqui começa o if da string escada
+                                                //aqui começa o if da string escada
         
-        if(resposta == "escada"){
-            alert("você opta por descer a escada");
+    if(resposta == "escada"){
+        alert("você opta por descer a escada");
         alert("logo ao descer a escada você se depara com um guarda");
-        let dano;
-        let VDguarda = 10;
-        let combatNormal = "você entrou em um combate."
+            let dano;
+            let VDguarda = 10;
+            let combatNormal = "você entrou em um combate."
     
-    let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
+        let guarda = prompt("você quer lutar (L) ou sair de fininho (SF)");
     
         if(guarda == "SF"){
             alert("você passa pelo guarda bem no sapatinho!");
@@ -121,19 +129,19 @@
         if(golpe == "C"){
             let dano = 3;
                 if(golpe == "C"){
-                     VDguarda -= dano;
+                    VDguarda -= dano;
                 if(VDguarda == 7){
                     alert(`chute causou ${dano} de dano.`);
                     alert("o guarda se prepara para atacar!");
                         golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
-                    if(golpe2 == "Ds"){
+                if(golpe2 == "Ds"){
                         alert("você falha em desviar e recebe o dano por inteiro");
                             pv -= 4;
                             alert(`você recebeu ${dano} de dano!`);
-                        golpe = prompt("escolha entre chute(C) ou soco(S)");
+                            golpe = prompt("escolha entre chute(C) ou soco(S)");
                     }
                 }
-                }
+            }
         }
 
         if(golpe == "S"){
@@ -141,7 +149,7 @@
                 if(golpe == "S"){
                      VDguarda -= dano;
                 if(VDguarda == 6){
-                    alert("chute causou 4 de dano.");
+                    alert(`soco causou ${dano} de dano`);
                     alert("o guarda se prepara para atacar!");
                         golpe2 = prompt("escolha entre desviar(Ds), defender(Df) ou contra atacar!(Ca)");
                     if(golpe2 == "Ds"){
@@ -149,19 +157,19 @@
                             pv -= 4;
                         alert("você recebeu 4 de dano!");
                         golpe = prompt("escolha entre chute(C) ou soco(S)");
-                }
-                }
+                        }
+                    }
                 }
         
-        }
+            }
 
-}
-}
+        }
+    }
 
 }
 
 alert("Você morreu.")
 
-    
-
 </script>
+</body>
+</html>
